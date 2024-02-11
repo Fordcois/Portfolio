@@ -58,11 +58,3 @@
     font-size: 2em;
     color: azure;
   }
-
-  .IntroRight{
-    background-image: radial-gradient(circle, #49b9d1, #f9b5af, #f5a091 93%);
-    /* background-image: radial-gradient(circle, #f8aba5 50%, #f9aaa0, #f09481); */
-    background-repeat: no-repeat;
-
-    /* background-image: linear-gradient(#fcb5ad, #f09481); */
-  }
