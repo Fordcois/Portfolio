@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
   .stack {
     display: grid;
     grid-template-columns: 1fr;
@@ -11,7 +16,7 @@
     font-weight: bold;
     grid-row-start: 1;
     grid-column-start: 1;
-    font-size: 6.5rem;
+    font-size: 5rem;
     --stack-height: calc(100% / var(--stacks) - 1px);
     --inverse-index: calc(calc(var(--stacks) - 1) - var(--index));
     --clip-top: calc(var(--stack-height) * var(--index));
@@ -58,3 +63,4 @@
     font-size: 2em;
     color: azure;
   }
+
