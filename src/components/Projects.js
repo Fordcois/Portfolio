@@ -14,11 +14,11 @@ const Projects = () => {
 
       <div key={project.name} style={{ display: 'flex', width: '100vw' }}>
         
-        <div style={{ flex: '35%', padding: '4% 5%' }}>
+        <div style={{ flex: '35%', padding: '2% 2%' }}>
           <Screen title={project.name} />
         </div>
 
-          <div style={{ flex: '65%', padding: '4% 1%' }}>
+          <div style={{ flex: '65%', padding: '1% 1%' }}>
             <div>
               <span className='TitlePinkGradient'>{project.name.toUpperCase()}</span>
               <div style={{ width: '75%', height: '4px', background: '#ef9380' }}></div>

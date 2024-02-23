@@ -89,6 +89,8 @@ body {
 
 .Screen {
   width: fit-content;
+  border: #ef9380 2px solid;
+  border-radius:15px 15px 15px 15px;
 }
 
 .ScreenImage{

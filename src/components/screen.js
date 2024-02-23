@@ -18,7 +18,7 @@ return (
         </div>
     </div>
     <div style={{ width: '100%' }}> 
-    <Image src={YoutubeImage} alt="Image" width={500} height={300} layout="responsive" style={{ border: '2px solid #ef9380' }} className="ScreenImage" title='Screenshot'/>
+    <Image src={YoutubeImage} alt="Image" width={500} height={300} layout="responsive" className="ScreenImage" title='Screenshot'/>
     </div>
 </div>
 );
