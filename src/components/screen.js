@@ -2,9 +2,11 @@ import React from 'react';
 import Image from 'next/image';
 import YoutubeImage from '@/assets/demo_screen.png';
 import { FaCircleMinus, FaCirclePlus, FaCircleXmark} from "react-icons/fa6";
+
 const Screen = (props) => {
-    const imagePath = props.image;
-    const projectTitle = props.title;
+
+const imagePath = props.image;
+const projectTitle = props.title;
 
 return (     
 
@@ -18,7 +20,7 @@ return (
         </div>
     </div>
     <div style={{ width: '100%' }}> 
-    <Image src={YoutubeImage} alt="Image" width={500} height={300} layout="responsive" className="ScreenImage" title='Screenshot'/>
+    <Image src={YoutubeImage} alt="Project Page" width={500} height={300} layout="responsive" className="ScreenImage" title='Screenshot'/>
     </div>
 </div>
 );

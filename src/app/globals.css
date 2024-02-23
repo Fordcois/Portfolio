@@ -78,14 +78,10 @@ body {
 
   .TitlePinkGradient {
     position: relative;
-    font-size: 2.5em;
+    font-size: 2.5rem;
     font-family: 'Oswald', sans-serif;
-    background: linear-gradient(to right, #ef9380, #bf656c);
-    background-clip: text;
-    -webkit-background-clip: text; 
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-}
+    color: #ef9380;
+  }
 
 .Screen {
   width: fit-content;
@@ -97,8 +93,33 @@ body {
   border-radius:0px 0px 15px 15px;
 }
 
-
 .BrowserButton {
 color: azure;
 margin-right:2px;
+}
+
+.TechBubble {
+  color:azure;
+  background-color: #ef9380;
+  padding: 0.5% 2%;
+  border-radius:15px 15px 15px 15px;
+  margin-left: .25%;
+  margin-right: .25%;
+  font-size: .75rem;
+  font-weight: bold;
+}
+
+.TechBubbleBlue {
+  color:white;
+  background-color: black;
+  padding: 0.5% 2%;
+  border-radius:15px 15px 15px 15px;
+  margin-left: .25%;
+  margin-right: .25%;
+  font-size: .75rem;
+  font-weight: bold;
+}
+
+.TechBubbleBlue:hover {
+  background-color: darkgray;
 }
