@@ -1,9 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
-  .stack {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.subheading {
+  font-family: 'Oswald', sans-serif;
+  color: azure;
+  font-size: 1.5rem;
+}
+
+.stack {
+  display: grid;
+  grid-template-columns: 1fr;
+}
 
   .stack span {
     font-family: 'Oswald', sans-serif;
@@ -11,7 +22,7 @@
     font-weight: bold;
     grid-row-start: 1;
     grid-column-start: 1;
-    font-size: 6.5rem;
+    font-size: 5rem;
     --stack-height: calc(100% / var(--stacks) - 1px);
     --inverse-index: calc(calc(var(--stacks) - 1) - var(--index));
     --clip-top: calc(var(--stack-height) * var(--index));
@@ -27,7 +38,7 @@
     0% {
       opacity: 0;
       transform: translateX(-50%);
-      text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
+      text-shadow: -2px 3px 0 #a64c6d, 2px -3px 0 #51bbcf;
     };
     60% {
       opacity: 0.5;
@@ -36,7 +47,7 @@
     80% {
       transform: none;
       opacity: 1;
-      text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
+      text-shadow: 2px -3px 0 #a64c6d, -2px 3px 0 #51bbcf;
     }
     100% {
       text-shadow: none;
@@ -45,11 +56,11 @@
   
   @keyframes glitch {
     0% {
-      text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
+      text-shadow: -2px 3px 0 #a64c6d, 2px -3px 0 #51bbcf;
       transform: translate(var(--glitch-translate));
     }
     2% {
-      text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
+      text-shadow: 2px -3px 0 #a64c6d, -2px 3px 0 #51bbcf;
     }
     4%, 100% {  text-shadow: none; transform: none; }
   }
@@ -57,12 +68,35 @@
   .ReactIcons{
     font-size: 2em;
     color: azure;
+    margin-right: 0.5rem;
   }
 
-  .IntroRight{
-    background-image: radial-gradient(circle, #49b9d1, #f9b5af, #f5a091 93%);
-    /* background-image: radial-gradient(circle, #f8aba5 50%, #f9aaa0, #f09481); */
-    background-repeat: no-repeat;
-
-    /* background-image: linear-gradient(#fcb5ad, #f09481); */
+  .ArrowIcon{
+    font-size: 4em;
+    color: azure;
   }
+
+  .TitlePinkGradient {
+    position: relative;
+    font-size: 2.5em;
+    font-family: 'Oswald', sans-serif;
+    background: linear-gradient(to right, #ef9380, #bf656c);
+    background-clip: text;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.Screen {
+  width: fit-content;
+}
+
+.ScreenImage{
+  border-radius:0px 0px 15px 15px;
+}
+
+
+.BrowserButton {
+color: azure;
+margin-right:2px;
+}
