@@ -3,11 +3,15 @@ import { MdEmail } from 'react-icons/md';
 
 const Socials = () => {
 return (
-    <div style={{ textAlign: 'left', alignItems:'bottom'}}>
-    <a href='https://github.com/Fordcois'><FaGithub className="ReactIcons" /></a>
-    <a href='https://www.linkedin.com/in/samueljford/'><FaLinkedin className="ReactIcons" /></a>
-    <a href='mailto:samueljamesford@googlemail.com'><MdEmail className="ReactIcons" /></a>
-    </div>
+
+<div style={{backgroundColor: 'transparent', textAlign: 'left', alignItems: 'bottom', display: 'flex'}}>
+  <a href="https://github.com/Fordcois"><FaGithub className="ReactIcons" title='GitHub'/></a>
+  <span style={{width:'5%'}}/>
+  <a href="https://www.linkedin.com/in/samueljford/"><FaLinkedin className="ReactIcons" title='Linkedin'/></a>
+  <span style={{width:'5%'}}/>
+  <a href="mailto:samueljamesford@googlemail.com"><MdEmail className="ReactIcons" title='Email'/></a> 
+</div>
+
 );
 };
 
