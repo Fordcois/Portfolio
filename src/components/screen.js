@@ -5,7 +5,7 @@ import { FaCircleMinus, FaCirclePlus, FaCircleXmark} from "react-icons/fa6";
 
 const Screen = (props) => {
 
-const imagePath = props.image;
+const image = props.image;
 const projectTitle = props.title;
 
 return (     
@@ -20,7 +20,7 @@ return (
         </div>
     </div>
     <div style={{ width: '100%' }}> 
-    <Image src={YoutubeImage} alt="Project Page" width={500} height={300} layout="responsive" className="ScreenImage" title='Screenshot'/>
+    <Image src={image} alt="Project Page" width={500} height={300} layout="responsive" className="ScreenImage" title='Screenshot'/>
     </div>
 </div>
 );

@@ -91,6 +91,8 @@ body {
 
 .ScreenImage{
   border-radius:0px 0px 15px 15px;
+padding-bottom: 0px;
+margin-bottom: 0px;
 }
 
 .BrowserButton {
@@ -109,17 +111,31 @@ margin-right:2px;
   font-weight: bold;
 }
 
-.TechBubbleBlue {
+.TechBubbleBlack {
   color:white;
   background-color: black;
   padding: 0.5% 2%;
   border-radius:15px 15px 15px 15px;
-  margin-left: .25%;
-  margin-right: .25%;
+  margin-left: .5%;
+  margin-right: .5%;
+  font-size: .75rem;
+  font-weight: bold;
+}
+
+.TechBubbleBlack:hover {
+  background-color: darkgray;
+}
+.TechBubbleBlue {
+  color:white;
+  background-color: #51bbcf;
+  padding: 0.5% 2%;
+  border-radius:15px 15px 15px 15px;
+  margin-left: .5%;
+  margin-right: .5%;
   font-size: .75rem;
   font-weight: bold;
 }
 
 .TechBubbleBlue:hover {
-  background-color: darkgray;
+  background-color: #61e0f8;
 }
