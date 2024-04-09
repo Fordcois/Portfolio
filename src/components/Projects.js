@@ -2,9 +2,8 @@ import React from 'react';
 import Screen from './screen';
 import { FaGithub,FaGlobe } from 'react-icons/fa';
 
-import YoutubeImage from '@/assets/demo_screen.png'
-import TwitterImage from '@/assets/twitter_screen.png'
-import FacebookImage from '@/assets/facebook_screen.png'
+import BoozersWeepersImage from '@/assets/screenshots/BoozersWeepers_screenshot.png'
+import AcebookImage from '@/assets/screenshots/Acebook_Screenshot.png'
 
 const projects = [
   // {name: 'EXAMPLE', 
@@ -14,21 +13,20 @@ const projects = [
   // github:'http://www.github.com' - Remove if no Link,
   // website: 'http://twitter.com' - Remove if no ink,
   // },
-  {name: 'Twitter', 
-  image: TwitterImage,
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lorem mi, pretium eget molestie et, ultricies vitae diam. Nunc vitae lectus nunc. Nullam sollicitudin, lacus non hendrerit blandit, nisl nibh laoreet tortor, a mattis dui mauris sed metus. Curabitur eu diam sit amet tortor suscipit tincidunt. Quisque non hendrerit orci. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras ac orci blandit, facilisis mi at, pulvinar orci. Aenean finibus euismod finibus. Quisque aliquet non nisl quis posuere. ',
+  {name: 'Boozers Weepers', 
+  image: BoozersWeepersImage,
+  description: 'BoozersWeepers is a full stack application based around creating and tracking bets between friends. Users are able to register accounts, log bets with other users, claim wins from a wallet & Compare stats between groups.',
   techUsed: ['Mongo', 'Express', 'React', 'NodeJS'],
-  github:'http://www.github.com',
-  website: 'http://twitter.com',
+  github:'https://github.com/Fordcois/BoozersWeepers',
   },
-  {name: 'Youtube',
-  image:YoutubeImage,
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin imperdiet lectus nulla, non facilisis odio ultrices sit amet. Nullam in bibendum odio, eu eleifend lectus. In nibh purus, consectetur vel convallis pellentesque, tincidunt vitae ligula. Phasellus quis sapien et velit pretium porta nec non ante. Morbi sed lacus ligula. Sed sed nulla sed odio ornare maximus et sit amet urna. Duis tincidunt mi vitae dolor vulputate, nec rutrum neque mollis. Praesent sit amet eleifend leo. Sed condimentum eget neque nec iaculis. Donec a erat id nisi vestibulum pellentesque vel eget augue. Aliquam pellentesque egestas massa eget rhoncus. Nunc vitae efficitur ligula. ',
-  techUsed: ['Python', 'Flask', 'Postgres',] ,
-  github:'http://www.Youtube.com',
+  {name: 'Acebook',
+  image:AcebookImage,
+  description: "A fullstack Facebook clone created from a legacy starter codebase. Recreates Facebook’s main functionalities including: Newsfeed, Likes, Comments, image uploads,User Profiles, Real-time Search, and Friends.",
+  techUsed: ['Mongo', 'Express', 'React', 'NodeJS'] ,
+  github:'https://github.com/clairep94/acebook-team-griffins',
   },
-  {name: 'Facebook', 
-  image: FacebookImage,
+  {name: 'MakersBNB', 
+  image: AcebookImage,
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lorem mi, pretium eget molestie et, ultricies vitae diam. Nunc vitae lectus nunc. Nullam sollicitudin, lacus non hendrerit blandit, nisl nibh laoreet tortor, a mattis dui mauris sed metus. Curabitur eu diam sit amet tortor suscipit tincidunt. Quisque non hendrerit orci. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras ac orci blandit, facilisis mi at, pulvinar orci. Aenean finibus euismod finibus. Quisque aliquet non nisl quis posuere. ',
   techUsed: ['Typescript'],
   },
