@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+:root {
+  --Pink: #ef9380;
+  --Blue: #51bbcf;
+  --MainFont: 'Oswald', sans-serif;}
+
+
 
 body {
   margin: 0;
@@ -6,7 +12,7 @@ body {
 }
 
 .subheading {
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--MainFont);
   color: azure;
   font-size: 1.5rem;
 }
@@ -17,7 +23,7 @@ body {
 }
 
   .stack span {
-    font-family: 'Oswald', sans-serif;
+    font-family: var(--MainFont);
     color: azure;
     font-weight: bold;
     grid-row-start: 1;
@@ -38,7 +44,7 @@ body {
     0% {
       opacity: 0;
       transform: translateX(-50%);
-      text-shadow: -2px 3px 0 #a64c6d, 2px -3px 0 #51bbcf;
+      text-shadow: -2px 3px 0 #a64c6d, 2px -3px 0 var(--Blue);
     };
     60% {
       opacity: 0.5;
@@ -47,7 +53,7 @@ body {
     80% {
       transform: none;
       opacity: 1;
-      text-shadow: 2px -3px 0 #a64c6d, -2px 3px 0 #51bbcf;
+      text-shadow: 2px -3px 0 #a64c6d, -2px 3px 0 var(--Blue);
     }
     100% {
       text-shadow: none;
@@ -56,11 +62,11 @@ body {
   
   @keyframes glitch {
     0% {
-      text-shadow: -2px 3px 0 #a64c6d, 2px -3px 0 #51bbcf;
+      text-shadow: -2px 3px 0 #a64c6d, 2px -3px 0 var(--Blue);
       transform: translate(var(--glitch-translate));
     }
     2% {
-      text-shadow: 2px -3px 0 #a64c6d, -2px 3px 0 #51bbcf;
+      text-shadow: 2px -3px 0 #a64c6d, -2px 3px 0 var(--Blue);
     }
     4%, 100% {  text-shadow: none; transform: none; }
   }
@@ -79,20 +85,18 @@ body {
   .TitlePinkGradient {
     position: relative;
     font-size: 2.5rem;
-    font-family: 'Oswald', sans-serif;
-    color: #ef9380;
+    font-family: var(--MainFont);
+    color: var(--Pink);
   }
 
 .Screen {
-  width: fit-content;
-  border: #ef9380 2px solid;
-  border-radius:15px 15px 15px 15px;
+  background-color: red;
 }
 
 .ScreenImage{
+  border: var(--Pink) 5px solid;
+  border-top-width: 0px;
   border-radius:0px 0px 15px 15px;
-padding-bottom: 0px;
-margin-bottom: 0px;
 }
 
 .BrowserButton {
@@ -102,7 +106,7 @@ margin-right:2px;
 
 .TechBubble {
   color:azure;
-  background-color: #ef9380;
+  background-color: var(--Pink);
   padding: 0.5% 2%;
   border-radius:15px 15px 15px 15px;
   margin-left: .25%;
@@ -127,7 +131,7 @@ margin-right:2px;
 }
 .TechBubbleBlue {
   color:white;
-  background-color: #51bbcf;
+  background-color: var(--Blue);
   padding: 0.5% 2%;
   border-radius:15px 15px 15px 15px;
   margin-left: .5%;
@@ -139,3 +143,37 @@ margin-right:2px;
 .TechBubbleBlue:hover {
   background-color: #61e0f8;
 }
+
+.ParentDiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #ef9380;
+  border-radius:15px 15px 15px 15px;
+  border: var(--Pink) 2px solid;
+}
+.ImageDiv{
+  background-color: green;
+  border-radius:0px 0px 15px 15px;
+  width: 100%;
+  height: 100%;
+}
+.ImageBrowserNavigationBar {
+  display: flex;
+  justify-content: space-between;
+  vertical-align: text-bottom;
+}
+.ImageBrowserNavigationTitle {
+  color: azure;
+  padding-left: 10px;
+}
+
+.ImageBrowserNavigationButtons {
+  padding-right: 1%;
+  display: flex;
+  justify-content: space-between;
+  vertical-align: text-bottom;
+}
+
+
+

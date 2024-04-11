@@ -9,21 +9,19 @@ const projectTitle = props.title;
 
 return (     
 
+<div className='ParentDiv'>
+        <div className='ImageBrowserNavigationBar'>
+            <span className='ImageBrowserNavigationTitle'> {projectTitle.toUpperCase()}</span>
 
-
-
-<div className='Screen'>
-    <div style={{ backgroundColor: '#ef9380', borderRadius: '10px 10px 0% 0%', display: 'flex', justifyContent: 'space-between',alignItems:'center',width:'100%'}}>
-        <span style={{ color: 'azure', marginLeft:'10px'}}> {projectTitle}</span>
-        <div style={{paddingRight: '1%', display: 'flex', justifyContent: 'space-between',verticalAlign: 'text-bottom'}}>
-            <FaCircleMinus className='BrowserButton' />
-            <FaCirclePlus className='BrowserButton' />
-            <FaCircleXmark className='BrowserButton' />
+            <div className='ImageBrowserNavigationButtons'>
+                <FaCircleMinus  className='BrowserButton' />
+                <FaCirclePlus   className='BrowserButton' />
+                <FaCircleXmark  className='BrowserButton' />
+            </div>
         </div>
-    </div>
-    <div style={{ width: '100%' }}> 
-    <Image src={image} alt="Project Page" width={1905} height={967} layout="responsive" className="ScreenImage" title='Screenshot'/>
-    </div>
+        <div >
+            <Image src={image} alt="Project Page" width={640} height={360} title='Screenshot' className='ImageDiv'/>
+        </div>
 </div>
 );
 };

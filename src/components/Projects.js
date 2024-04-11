@@ -24,12 +24,13 @@ const projects = [
   description: "A fullstack Facebook clone created from a legacy starter codebase. Recreates Facebook’s main functionalities including: Newsfeed, Likes, Comments, image uploads,User Profiles, Real-time Search, and Friends.",
   techUsed: ['Mongo', 'Express', 'React', 'NodeJS'] ,
   github:'https://github.com/clairep94/acebook-team-griffins',
+  website:'https://github.com/clairep94/acebook-team-griffins',
   },
-  {name: 'MakersBNB', 
-  image: AcebookImage,
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lorem mi, pretium eget molestie et, ultricies vitae diam. Nunc vitae lectus nunc. Nullam sollicitudin, lacus non hendrerit blandit, nisl nibh laoreet tortor, a mattis dui mauris sed metus. Curabitur eu diam sit amet tortor suscipit tincidunt. Quisque non hendrerit orci. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras ac orci blandit, facilisis mi at, pulvinar orci. Aenean finibus euismod finibus. Quisque aliquet non nisl quis posuere. ',
-  techUsed: ['Typescript'],
-  },
+  // {name: 'MakersBNB', 
+  // image: AcebookImage,
+  // description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lorem mi, pretium eget molestie et, ultricies vitae diam. Nunc vitae lectus nunc. Nullam sollicitudin, lacus non hendrerit blandit, nisl nibh laoreet tortor, a mattis dui mauris sed metus. Curabitur eu diam sit amet tortor suscipit tincidunt. Quisque non hendrerit orci. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras ac orci blandit, facilisis mi at, pulvinar orci. Aenean finibus euismod finibus. Quisque aliquet non nisl quis posuere. ',
+  // techUsed: ['Typescript'],
+  // },
 ];
 
 const Projects = () => {
