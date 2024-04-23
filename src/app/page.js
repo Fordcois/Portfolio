@@ -1,11 +1,11 @@
-import SplashScreen from '@/components/SplashScreen';
-import Projects from "@/components/Projects";
+import SplashScreen from "@/components/SplashScreen";
+import BrowserProjects from "@/components/GraphicProjects";
 
 export default function Home() {
-return (
-<>
-  <SplashScreen/>
-  <Projects/>
-</>
-);}
-
+  return (
+    <>
+    <SplashScreen />
+    <BrowserProjects />
+    </>
+  );
+}
