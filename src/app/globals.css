@@ -226,6 +226,20 @@ body {
   align-items: center;
 }
 
+.NoGraphic-ProjectDiv-Container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+.NoGraphic-Project-Description {
+  display: flex;
+  text-align: justify;
+  text-justify: inter-word;
+  padding: 5px
+}
+
 .Project-Screen-Container {
   padding: 10px;
   width: 40%;
@@ -235,4 +249,18 @@ body {
   padding: 10px;
   width: 60%;
   min-width: 500px;
+}
+
+.SingleNonVisualProject{
+  padding: 5px;
+  min-width: 300px;
+  max-width: 300px;
+  /* border: 2px solid var(--Pink); */
+  border-radius: 15px 15px 15px 15px;
+  margin-top: 25px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.NonVisualTechStack{
+  align-self: flex-end;
 }

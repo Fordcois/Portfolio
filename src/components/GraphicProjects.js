@@ -37,7 +37,12 @@ return (
 
 <span className="SectionHeaderBox-Pink">PROJECTS...</span>
 
-    {projects.map((project) => (
+    {projects.map((project,index) => (
+
+           // Alternate between two different processes
+                // if (index % 2 === 0){}
+                // else{ }
+        
         <div key={project.name} className="Single-Graphic-Project">
         <div className="Project-Screen-Container">
             <Screen title={project.name} image={project.image} />
