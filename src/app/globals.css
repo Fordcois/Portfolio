@@ -10,6 +10,23 @@ body {
   padding: 0;
 }
 
+.Container2 {
+  display: flex;
+  background-color: #a64c6d;
+  flex-direction: column;
+  align-items: center; /* Center child elements horizontally */
+  width: 100%;
+}
+
+.Page-Content {
+  background-color: #51bbcf;
+  max-width: 1440px;
+  width: 100%;
+}
+
+
+
+
 .subheading {
   font-family: var(--MainFont);
   color: azure;

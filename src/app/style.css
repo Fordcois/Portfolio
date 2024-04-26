@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+:root {
+  --Pink: #ef9380;
+  --Blue: #51bbcf;
+  --MainFont: "Oswald", sans-serif;
+}
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .Content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 5px; /* Adds padding around the content */
+    text-align: center; /* Centers text within the content */
+}
+
+  .ContactForm {
+    display: flex;
+    width: 550px;
+    background-color: var(--Pink);
+    border-radius: 15px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding: 20px;
+  }
+
+  .ContactForm input{
+    margin-bottom: 10px;
+  }
+  .ContactForm textarea{
+  resize: none; 
+  width: 540px; 
+  margin-bottom: 10px;
+  }
+
+  .FormLabel{
+    color: azure;
+    font-family: var(--MainFont);
+    text-transform: uppercase;
+  }
+
+  .FormButton{
+    border: none;
+    text-transform: uppercase;
+    font-family: var(--MainFont);
+    border-radius: 15px;
+    color: var(--Pink);
+    background-color: rgb(255,255,255)
+  }
+
+  .FormButton:hover{
+    background-color: rgb(246,246,246);
+    color: rgb(230, 138, 119)
+  }
+
+  .FormSubmitted{
+      display: flex;
+      width: 550px;
+      background-color: var(--Pink);
+      border-radius: 15px;
+      flex-direction: column;
+      justify-content: center;
+      padding: 20px;
+      text-transform: uppercase;
+      font-family: var(--MainFont);
+      font-size: 1.5rem;
+      color: azure;
+  }
+  
+  /* xs */
+@media (min-width: 475px) {
+    .container {
+      max-width: 475px;
+    }
+  }
+  
+/* sm */
+  @media (min-width: 640px) {
+    .container {
+      max-width: 640px;
+    }
+  }
+  
+  /* md */
+  @media (min-width: 768px) {
+    .container {
+      max-width: 768px;
+    }
+  }
+  
+  /* lg */
+  @media (min-width: 1024px) {
+    .container {
+      max-width: 1024px;
+    }
+  }
+  
+  /* xl */
+  @media (min-width: 1280px) {
+    .container {
+      max-width: 1280px;
+    }
+  }
+  
+  /* 2xl */
+  @media (min-width: 1536px) {
+    .container {
+      max-width: 1536px;
+    }
+  }
