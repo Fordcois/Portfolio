@@ -1,14 +1,13 @@
 import React from 'react';
 
-const Glitch = (props) => {
-  const { Text } = props;
+const Glitch = ({Name,Title}) => {
 
 return (     
 
   <div className="stack" style={{ "--stacks": 3 }}>
-    <span style={{ "--index": 0 }}>{Text}</span>
-    <span style={{ "--index": 1 }}>{Text}</span>
-    <span style={{ "--index": 2 }}>{Text}</span>
+    <span style={{ "--index": 0 }}>{Name}</span>
+    <span style={{ "--index": 1 }}>{Name}</span>
+    <span style={{ "--index": 2 }}>{Name}</span>
   </div>
 
 

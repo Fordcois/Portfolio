@@ -13,6 +13,38 @@
     padding-right: 0.5rem;
   }
 
+.Homepage-Background{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 100vh;
+  width: auto;
+  background-position: 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Homepage-Content{
+  padding: 5%;
+  width: 60%;
+}
+
+.Glitch-SubHeading{
+  font-family: var(--MainFont);
+  color: azure;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.Biotext{
+  text-align: justify;
+  color: azure;
+  text-justify: auto;
+}
+
+
+
   .Content {
     display: flex;
     flex-direction: column;
@@ -72,6 +104,10 @@
   
 
 @media (max-width: 425px) {
+.Homepage-Background{
+  background-position: 35%;
+}
+
   .ContactForm {
     display: flex;
     width: 285px;
@@ -89,12 +125,18 @@
   .ContactForm textarea{
   width: 275px; 
   }
+
+  
 }
 
   /* xs */
 @media (min-width: 475px) {
     .container {
       max-width: 475px;
+    }
+    .Homepage-Content{
+      padding: 5%;
+      width: 40%;
     }
 }
   

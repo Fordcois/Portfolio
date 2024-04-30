@@ -11,11 +11,11 @@ const [state, handleSubmit] = useForm("mpzvknvz");
 
 return (     
 
-<div className="container">
+<div className="container" style={{backgroundColor:'green'}}>
 
     <span className="SectionHeaderBox-Pink">CONTACT ME...</span>
     
-    <div className='Content' > 
+    <div className='Content' style={{backgroundColor:'green'}}> 
     
         <form onSubmit={handleSubmit} className='ContactForm'>
 
