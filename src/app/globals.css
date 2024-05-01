@@ -268,16 +268,19 @@ body {
   min-width: 500px;
 }
 
-.SingleNonVisualProject{
+.SingleNonVisualProject {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
   padding: 5px;
   min-width: 300px;
   max-width: 300px;
-  /* border: 2px solid var(--Pink); */
-  border-radius: 15px 15px 15px 15px;
+  border-radius: 15px;
   margin-top: 25px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .NonVisualTechStack{
-  align-self: flex-end;
+  width: 100%;
 }

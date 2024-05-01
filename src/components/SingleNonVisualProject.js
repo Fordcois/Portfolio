@@ -3,11 +3,11 @@ import { FaGithub, FaGlobe } from "react-icons/fa";
 const SingleNonVisualProject = ({name,description,tech,github,website}) => {
 return(
     <div className='SingleNonVisualProject'>
-        
-        <span className="TitlePinkGradient" style={{fontSize: '2rem'}}>{name.toUpperCase()}</span><br/>
-        <div className="TitlePinkGradient-Underline"></div>
-        
-        <p className="NoGraphic-Project-Description">{description}</p>
+        <div>
+            <span className="TitlePinkGradient" style={{fontSize: '2rem'}}>{name.toUpperCase()}</span><br/>
+            <div className="TitlePinkGradient-Underline"></div>
+            <p className="NoGraphic-Project-Description">{description}</p>
+        </div>
         <div className="NonVisualTechStack">
         {website ? (
                 <a href={website} style={{ textDecoration: "none", color: "inherit" }} >
