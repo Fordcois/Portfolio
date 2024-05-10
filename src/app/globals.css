@@ -214,6 +214,8 @@ body {
 
 .Screen-Image {
   border-radius: 0px 0px 15px 15px;
+  max-width: 400px;
+  max-height: 225px;
 }
 
 .Single-Graphic-Project {

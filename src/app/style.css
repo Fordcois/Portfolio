@@ -6,11 +6,20 @@
 }
 
 .container {
+  background-color: #ef9380;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+  }
+
+.Browser-Project-Container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    background-color: aquamarine;
+    padding: 5px;
   }
 
 .Homepage-Background{
@@ -125,6 +134,13 @@
   .ContactForm textarea{
   width: 275px; 
   }
+
+  .Browser-Project-Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+}
 
   
 }

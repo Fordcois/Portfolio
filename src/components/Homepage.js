@@ -20,7 +20,7 @@ return (
     </div> 
 
     <div style={{ position: 'absolute', bottom: '1%', right: '1%', padding: '10px' }}>
-          <FaArrowDown className="ArrowIcon" />
+        <FaArrowDown className="ArrowIcon" />
         </div>
 </div>
 );

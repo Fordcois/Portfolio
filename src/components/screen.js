@@ -19,14 +19,30 @@ return (
             <FaCircleXmark className="BrowserButton" />
         </div>
     </div>
-        <Image
-            src={image}
-            alt="Project Page"
-            width={480}
-            height={270}
-            title="Screenshot"
-            className="Screen-Image"
-        />
+    <div
+            style={{
+                position: 'relative',
+                width: '100%', // Parent container width
+                height: 'auto', // Allow height to adjust based on image aspect ratio
+                maxWidth: '800px', // Maximum width of the image
+                minWidth: '320px', // Minimum width of the image
+                maxHeight: '450px', // Maximum height of the image
+                minHeight: '180px', // Minimum height of the image
+            }}
+        >
+            <Image
+                src={image}
+                alt="Project Page"
+                fill
+                title="Screenshot"
+                style={{
+                    objectFit: 'contain', // Maintain aspect ratio and fit the image within the container
+                    width: '100%', // Ensure the image fills the container
+                    height: '100%', // Adjust height according to aspect ratio
+                }}
+                className="Screen-Image"
+            />
+        </div>
 </div>
 );
 };
