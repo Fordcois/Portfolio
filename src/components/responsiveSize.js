@@ -32,14 +32,14 @@ return (
         {index % 2 === 0 ? (
             // Left Alignment
             <div className='Browser-Project-Container'>
-                <BrowserImage Align='Right' projectName='ProjectName' image='IMAGE'/>
-                <BrowserDesc Align='Left' projectName='Project'projectDescription='Description' projectTechUsed={["Mongo", "Express", "React", "NodeJS"]} github='GitHUB' website='website' />
+                <BrowserImage Align='Right' projectName={project.name} image='IMAGE'/>
+                <BrowserDesc Align='Left' projectName={project.name} projectDescription='Description' projectTechUsed={["Mongo", "Express", "React", "NodeJS"]} github='GitHUB' website='website' />
             </div>
         ) : (
             // Right Alignment
             <div className='Browser-Project-Container'>
-                <BrowserDesc Align='Right' projectName='Project'projectDescription='Description' projectTechUsed={["Mongo", "Express", "React", "NodeJS"]} github='GitHUB' website='website' />
-                <BrowserImage Align='Left' projectName='ProjectName' image='IMAGES'/>
+                <BrowserDesc Align='Right' projectName={project.name} projectDescription='Description' projectTechUsed={["Mongo", "Express", "React", "NodeJS"]} github='GitHUB' website='website' />
+                <BrowserImage Align='Left' projectName={project.name} image='IMAGES'/>
             </div>
         )}
     </div>
