@@ -13,6 +13,7 @@ return (
             <div className="TitlePinkGradient-Underline"></div>
 
             <p>{projectDescription}</p>
+            {/* TODO TechStack Should Be Turned into a seperate Componenet */}
 
 
 
