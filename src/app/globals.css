@@ -3,6 +3,7 @@
   --Pink: #ef9380;
   --Blue: #51bbcf;
   --MainFont: "Oswald", sans-serif;
+  --Shadow:box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 body {
@@ -129,12 +130,12 @@ body {
   height: 5px;
   width: 85%;
   background-color: var(--Pink);
+  border-radius: 50px;
 }
 
 .Project-Description{
   text-align: justify;
   text-justify: inter-word;
-  padding-right: 15%;
 }
 
 .BrowserButton {

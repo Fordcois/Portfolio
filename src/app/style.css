@@ -3,15 +3,73 @@
   --Pink: #ef9380;
   --Blue: #51bbcf;
   --MainFont: "Oswald", sans-serif;
+  --Shadow:rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
 }
 
 .container {
-  background-color: #ef9380;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+  }
+
+.container-wrapContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 10px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+  /* xs */
+  @media (min-width: 475px) {
+    .container-wrapContent {
+      max-width: 475px;
+      border: 2px solid blue;
+    }
+
+}
+  
+/* sm */
+  @media (min-width: 640px) {
+    .container-wrapContent {
+      max-width: 640px;
+      border: 2px solid red;
+    }
+  }
+  
+  /* md */
+  @media (min-width: 768px) {
+    .container-wrapContent {
+      max-width: 768px;
+      border: 2px solid green;
+    }
+  }
+  
+  /* lg */
+  @media (min-width: 1024px) {
+    .container-wrapContent {
+      max-width: 1024px;
+    }
+  }
+  
+  /* xl */
+  @media (min-width: 1280px) {
+    .container-wrapContent {
+      max-width: 1280px;
+    }
+  }
+  
+  /* 2xl */
+  @media (min-width: 1536px) {
+    .container-wrapContent {
+      max-width: 1536px;
+    }
   }
 
 
@@ -20,7 +78,10 @@
     flex-direction: column;
     justify-content: center; 
     align-items: center; 
-    background-color: rgb(210, 154, 210);
+    margin: 5px;
+    padding: 5px;
+    border-radius: 25px;
+    box-shadow: var(--Shadow);
 }
 
 .Homepage-Background{
@@ -175,7 +236,6 @@
       margin-bottom: 20px;
       align-items: flex-start;
       height: min-content;
-      background-color: purple;
     }
   }
   

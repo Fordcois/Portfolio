@@ -3,29 +3,22 @@ import TechStackDisplay from './tech-stack';
 
 const BrowserDesc = ({Align,projectName,projectDescription,projectTechUsed,github,website}) => {
 
+
+
 return (     
   // TODO Media query This
 
-  <div style={{backgroundColor:'blue',justifyContent:'flex-start',width:'70%'}}>
-      {/* Right Align  */}
-    <div style={{backgroundColor:'white',textAlign:'right'}}>
+  <div style={{justifyContent:'flex-start',width:'70%',padding:'5px'}}>
+
+    <div style={{textAlign:Align}}>
       <span className="TitlePinkGradient" style={{ marginLeft: 'auto' }}>{projectName.toUpperCase()}</span>
-      <div style={{ width: '75%', marginLeft: 'auto', backgroundColor: 'black',height:'5px' }}></div>
-    </div>
-    {/* Left Align */}
-    <div style={{backgroundColor:'white',textAlign:'left'}}>
-      <span className="TitlePinkGradient" style={{ marginLeft: 'auto' }}>{projectName.toUpperCase()}</span>
-      <div style={{ width: '75%', backgroundColor: 'black',height:'5px' }}></div>
+      <div className="TitlePinkGradient-Underline" style={{ marginLeft: (Align === 'Right' ? 'auto' : '0')}}></div>
     </div>
 
-            <p>{projectDescription}</p>
-            <TechStackDisplay TechStack={projectTechUsed} Github={github} Website={website} />
-
-
-
+    <p className="Project-Description" style={{paddingRight:(Align === 'Left' ? '15%' : '0%'),paddingLeft:(Align === 'Right' ? '15%' : '0%')}}>{projectDescription}</p>
+    <TechStackDisplay TechStack={projectTechUsed} Github={github} Website={website} Align={Align}/>
 
   </div>
-      );
-};
+      );};
 
 export default BrowserDesc;

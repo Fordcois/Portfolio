@@ -1,4 +1,5 @@
 import { FaGithub, FaGlobe } from "react-icons/fa";
+import TechStackDisplay from "./BrowserProjects/tech-stack";
 
 const SingleNonVisualProject = ({name,description,tech,github,website}) => {
 return(
@@ -8,30 +9,10 @@ return(
             <div className="TitlePinkGradient-Underline"></div>
             <p className="NoGraphic-Project-Description">{description}</p>
         </div>
-        <div className="NonVisualTechStack">
-        {website ? (
-                <a href={website} style={{ textDecoration: "none", color: "inherit" }} >
-                <span className="TechBubbleBlue">
-                    <FaGlobe style={{ fontSize: ".65rem", marginRight: ".5%" }} />LINK
-                </span>
-                </a>
-                ) : null}
 
-        {github ? (
-                <a href={github} style={{ textDecoration: "none", color: "inherit" }}>
-                    <span className="TechBubbleBlue"> <FaGithub style={{ fontSize: ".65rem", marginRight: ".5%" }}/>
-                        GITHUB
-                    </span>
-                </a>
-                ) : null}
-        <br/>
-        {tech.map((tech,index) => (
-                <span key={index} className="TechBubble">
-                    {tech.toUpperCase()}
-                </span>
-                ))}
+        <TechStackDisplay TechStack={tech} Github={github} Website={website} Align={'Left'}/>
+        
 
-    </div>
     </div>
 )
 }

@@ -9,7 +9,7 @@ const projects = [
     name: "ABC1",
     image: 'ABC IMAGE',
     description:
-        "ABC, ITS EASY AS 123",
+    "A fullstack Facebook clone created from a legacy starter codebase. Recreates Facebook’s main functionalities including: Newsfeed, Likes, Comments, image uploads,User Profiles, Real-time Search, and Friends.",
     techUsed: ["Mongo", "Express", "React", "NodeJS"],
     github:"https://github.com"
     },

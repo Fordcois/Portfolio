@@ -11,10 +11,11 @@ export default function Home() {
     <>
     {/* <HomePage />
     <BrowserProjects />
-    <NonVisualProjects/>
+    
     <Contact/>
     <ContainerTest/> */}
     <ResonsiveImage />
+    <NonVisualProjects/>
     </>
   );
 }

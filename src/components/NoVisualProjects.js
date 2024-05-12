@@ -19,6 +19,7 @@ const projects = [
         "🔍 A logic-based Sudoku solver that attempts to solve user puzzles by iterating through the puzzle and removing impossible options",
     techUsed: ["Python"],
     github: "https://github.com/Fordcois/sudokuSolver",
+    website:'facebook.com'
     },
     {
     name: "Chitter",
@@ -42,7 +43,7 @@ const projects = [
 
 const Lorum = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in felis at risus gravida dictum quis quis ex. Aliquam congue tellus eu laoreet laoreet. In laoreet magna sed orci blandit pharetra. Duis id nulla et mauris suscipit malesuada. Fusce sagittis ipsum ac massa convallis lobortis. Integer at orci ac ligula lobortis posuere non vel lacus. Vivamus volutpat tellus a est semper, ut commodo lectus bibendum. Praesent tincidunt bibendum mauris, placerat aliquam dui aliquam nec. Suspendisse non ligula in orci interdum ornare. Cras vel tempus odio. Pellentesque eget volutpat lorem, vel dapibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in bibendum lectus. '
 return (
-<div className="NoGraphic-ProjectDiv-Container" >
+<div className="container-wrapContent" >
 {projects.map((project,index) => (
     <SingleNonVisualProject key={index} name={project.name} description = {project.description} tech={project.techUsed} github={project.github} website={project.website}/>
 
