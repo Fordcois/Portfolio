@@ -11,6 +11,7 @@ const projects = [
     description:
         "ABC, ITS EASY AS 123",
     techUsed: ["Mongo", "Express", "React", "NodeJS"],
+    github:"https://github.com"
     },
     {
     name: "Acebook",
@@ -33,12 +34,12 @@ return (
             // Left Alignment
             <div className='Browser-Project-Container'>
                 <BrowserImage Align='Right' projectName={project.name} image='IMAGE'/>
-                <BrowserDesc Align='Left' projectName={project.name} projectDescription='Description' projectTechUsed={["Mongo", "Express", "React", "NodeJS"]} github='GitHUB' website='website' />
+                <BrowserDesc Align='Left' projectName={project.name} projectDescription={project.description} projectTechUsed={project.techUsed} github={project.github} website={project.website} />
             </div>
         ) : (
             // Right Alignment
             <div className='Browser-Project-Container'>
-                <BrowserDesc Align='Right' projectName={project.name} projectDescription='Description' projectTechUsed={["Mongo", "Express", "React", "NodeJS"]} github='GitHUB' website='website' />
+                <BrowserDesc Align='Right' projectName={project.name} projectDescription={project.description} projectTechUsed={project.techUsed} github={project.github} website={project.website}  />
                 <BrowserImage Align='Left' projectName={project.name} image='IMAGES'/>
             </div>
         )}

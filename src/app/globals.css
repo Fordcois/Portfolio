@@ -183,6 +183,21 @@ body {
   background-color: #61e0f8;
 }
 
+.TechBubbleBlack {
+  color: white;
+  background-color: #202020;
+  padding: 0.5% 2%;
+  border-radius: 15px 15px 15px 15px;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.TechBubbleBlack:hover {
+  background-color: #606060;
+}
+
 .ParentDiv {
   display: flex;
   width: min-content;

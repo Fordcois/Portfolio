@@ -1,19 +1,25 @@
 import React from 'react';
+import TechStackDisplay from './tech-stack';
 
 const BrowserDesc = ({Align,projectName,projectDescription,projectTechUsed,github,website}) => {
 
 return (     
-  <div style={{backgroundColor:'blue',width:'60%', textAlign:Align}}>
-            {/* <span className="TitlePinkGradient">{projectName.toUpperCase()}</span><br/>
-            <div className="TitlePinkGradient-Underline"></div>
+  // TODO Media query This
 
-            <p className="Project-Description">{projectDescription}</p> */}
-
-            <span className="TitlePinkGradient">{projectName.toUpperCase()}</span><br/>
-            <div className="TitlePinkGradient-Underline"></div>
+  <div style={{backgroundColor:'blue',justifyContent:'flex-start',width:'70%'}}>
+      {/* Right Align  */}
+    <div style={{backgroundColor:'white',textAlign:'right'}}>
+      <span className="TitlePinkGradient" style={{ marginLeft: 'auto' }}>{projectName.toUpperCase()}</span>
+      <div style={{ width: '75%', marginLeft: 'auto', backgroundColor: 'black',height:'5px' }}></div>
+    </div>
+    {/* Left Align */}
+    <div style={{backgroundColor:'white',textAlign:'left'}}>
+      <span className="TitlePinkGradient" style={{ marginLeft: 'auto' }}>{projectName.toUpperCase()}</span>
+      <div style={{ width: '75%', backgroundColor: 'black',height:'5px' }}></div>
+    </div>
 
             <p>{projectDescription}</p>
-            {/* TODO TechStack Should Be Turned into a seperate Componenet */}
+            <TechStackDisplay TechStack={projectTechUsed} Github={github} Website={website} />
 
 
 
