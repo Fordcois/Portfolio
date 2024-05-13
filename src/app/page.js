@@ -1,9 +1,8 @@
-import SplashScreen from "@/components/SplashScreen";
-import BrowserProjects from "@/components/GraphicProjects";
+
 import NonVisualProjects from "@/components/NoVisualProjects";
 import Contact from "@/components/Contact";
 import HomePage from "@/components/Homepage";
-import ResonsiveImage from "@/components/responsiveSize";
+import VisualProjects from "@/components/VisualProjects";
 import Bio from "@/components/Bio";
 
 export default function Home() {
@@ -11,9 +10,10 @@ export default function Home() {
     <>
     <HomePage />
     <Bio/>
+    <VisualProjects/>
     {/* <BrowserProjects /> */}
-    <ResonsiveImage />
-    <NonVisualProjects/>
+    {/* <ResonsiveImage /> */}
+    {/* <NonVisualProjects/> */}
     {/* <Contact/> */}
     {/* <ContainerTest/> */}
     

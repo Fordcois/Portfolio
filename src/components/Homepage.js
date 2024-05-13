@@ -2,7 +2,6 @@ import React from 'react';
 import BackgroundImage from '@/assets/Port_Web_BackGround.png'
 import Glitch from './Glitch';
 import Socials from './Socials';
-import { FaArrowDown } from "react-icons/fa";
 import { FaAnglesDown } from "react-icons/fa6";
 
 const HomePage = () => {
