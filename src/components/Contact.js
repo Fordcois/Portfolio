@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react';
-import '@/app/style.css'
+
 import { useForm, ValidationError } from '@formspree/react';
 import { IoMdPaperPlane } from "react-icons/io";
 

@@ -4,7 +4,7 @@ import { MdEmail } from 'react-icons/md';
 const Socials = () => {
 return (
 
-<div style={{backgroundColor: 'transparent', textAlign: 'left', alignItems: 'bottom', display: 'flex'}}>
+<div className='Socials-Container'>
   <a href="https://github.com/Fordcois"><FaGithub className="ReactIcons" title='GitHub'/></a>
   <span style={{width:'5%'}}/>
   <a href="https://www.linkedin.com/in/samueljford/"><FaLinkedin className="ReactIcons" title='Linkedin'/></a>

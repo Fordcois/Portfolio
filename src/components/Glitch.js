@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Glitch = ({Name,Title}) => {
+const Glitch = ({Name}) => {
 
 return (     
 

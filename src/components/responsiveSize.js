@@ -1,4 +1,4 @@
-import '@/app/style.css'
+
 import Image from "next/image";
 
 import BrowserImage from './BrowserProjects/browser-image';

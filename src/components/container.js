@@ -1,4 +1,3 @@
-import '@/app/style.css'
 import Image from "next/image";
 import BoozersWeepersImage from "@/assets/screenshots/BoozersWeepers_screenshot.png";
 const ContainerTest = () => {

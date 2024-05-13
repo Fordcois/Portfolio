@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
 :root {
   --Pink: #ef9380;
   --Blue: #51bbcf;
   --MainFont: "Oswald", sans-serif;
-  --Shadow:box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  --Shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 body {
@@ -11,22 +12,90 @@ body {
   padding: 0;
 }
 
-.Container2 {
+/* HomePage  */
+
+.Homepage-Background {
   display: flex;
-  background-color: #a64c6d;
   flex-direction: column;
-  align-items: center; /* Center child elements horizontally */
-  width: 100%;
+  align-items: flex-end;
+  height: 100vh;
+  width: auto;
+  background-position: 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.Page-Content {
-  background-color: #51bbcf;
-  max-width: 1440px;
-  width: 100%;
+.Homepage-Content {
+  padding: 10px;
+}
+@media (min-width: 768px) {
+  .Homepage-Content {
+    width: 50%;
+  }
 }
 
+.Biotext {
+  text-align: justify;
+  color: azure;
+  text-justify: auto;
+  background-color: rgba(0, 0, blue, alpha);
+}
+@media (min-width: 475px) {
+  .Biotext {
+    background-color: transparent;
+    margin-right: 5%;
+    width: 100%;
+  }
+}
 
+.Glitch-SubHeading {
+  font-family: var(--MainFont);
+  color: azure;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-align: right;
+}
 
+@media (min-width: 768px) {
+  .Glitch-SubHeading {
+    text-align: left;
+  }
+}
+
+.Socials-Container {
+  display: flex;
+  background-color: transparent;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
+}
+@media (min-width: 768px) {
+  .Socials-Container {
+    justify-content: flex-start;
+    flex-direction:row;
+  }
+}
+
+.ReactIcons {
+  font-size: 4em;
+  color: azure;
+  margin-right: 0.5rem;
+}
+@media (min-width: 768px) {
+  .ReactIcons {
+    font-size: 3em;
+  }
+}
+
+.ArrowIcon {
+  font-size: 5em;
+  color: azure;
+}
+
+/* End Of HomePage Content */
+
+/* HomePage Glitch */
 
 .subheading {
   font-family: var(--MainFont);
@@ -38,6 +107,11 @@ body {
   display: grid;
   grid-template-columns: 1fr;
 }
+@media (min-width: 768px) {
+  .stack {
+    margin-top: 20%;
+  }
+}
 
 .stack span {
   font-family: var(--MainFont);
@@ -45,7 +119,7 @@ body {
   font-weight: bold;
   grid-row-start: 1;
   grid-column-start: 1;
-  font-size: 5rem;
+  font-size: 4rem;
   --stack-height: calc(100% / var(--stacks) - 1px);
   --inverse-index: calc(calc(var(--stacks) - 1) - var(--index));
   --clip-top: calc(var(--stack-height) * var(--index));
@@ -54,6 +128,11 @@ body {
   animation: stack 340ms cubic-bezier(0.46, 0.29, 0, 1.24) 1 backwards
       calc(var(--index) * 120ms),
     glitch 2s ease infinite 2s alternate-reverse;
+}
+@media (min-width: 768px) {
+  .stack span {
+    font-size: 5rem;
+  }
 }
 
 .stack span:nth-child(odd) {
@@ -98,17 +177,6 @@ body {
   }
 }
 
-.ReactIcons {
-  font-size: 2em;
-  color: azure;
-  margin-right: 0.5rem;
-}
-
-.ArrowIcon {
-  font-size: 4em;
-  color: azure;
-}
-
 .SectionHeaderBox-Pink {
   background-color: var(--Pink);
   font-size: 2.5rem;
@@ -126,14 +194,14 @@ body {
   font-family: var(--MainFont);
   color: var(--Pink);
 }
-.TitlePinkGradient-Underline{
+.TitlePinkGradient-Underline {
   height: 5px;
   width: 85%;
   background-color: var(--Pink);
   border-radius: 50px;
 }
 
-.Project-Description{
+.Project-Description {
   text-align: justify;
   text-justify: inter-word;
 }
@@ -148,7 +216,7 @@ body {
   color: azure;
   background-color: var(--Pink);
   padding: 0.5% 2%;
-  border-radius: 15px 15px 15px 15px;
+  border-radius: 15px;
   margin-left: 0.25%;
   margin-right: 0.25%;
   font-size: 0.75rem;
@@ -159,7 +227,7 @@ body {
   color: white;
   background-color: black;
   padding: 0.5% 2%;
-  border-radius: 15px 15px 15px 15px;
+  border-radius: 15px;
   margin-left: 0.5%;
   margin-right: 0.5%;
   font-size: 0.75rem;
@@ -169,11 +237,12 @@ body {
 .TechBubbleBlack:hover {
   background-color: darkgray;
 }
+
 .TechBubbleBlue {
   color: white;
   background-color: var(--Blue);
   padding: 0.5% 2%;
-  border-radius: 15px 15px 15px 15px;
+  border-radius: 15px;
   margin-left: 0.5%;
   margin-right: 0.5%;
   font-size: 0.75rem;
@@ -188,7 +257,7 @@ body {
   color: white;
   background-color: #202020;
   padding: 0.5% 2%;
-  border-radius: 15px 15px 15px 15px;
+  border-radius: 15px;
   margin-left: 0.5%;
   margin-right: 0.5%;
   font-size: 0.75rem;
@@ -203,7 +272,7 @@ body {
   display: flex;
   width: min-content;
   flex-direction: column;
-  border-radius: 15px 15px 15px 15px;
+  border-radius: 15px;
   border: var(--Pink) 2px solid;
   background-color: var(--Pink);
 }
@@ -239,21 +308,6 @@ body {
   max-width: 1400px;
 }
 
-@media (max-width: 767px) {
-  .Single-Graphic-Project {
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-  .TitlePinkGradient-Underline{
-    height: 5px;
-    width: 100%;
-    background-color: var(--Pink);
-  }
-  .Project-Description{
-    padding-right: 0%;
-  }
-}
-
 .ProjectDiv-Container {
   display: flex;
   flex-direction: column;
@@ -272,7 +326,7 @@ body {
   display: flex;
   text-align: justify;
   text-justify: inter-word;
-  padding: 5px
+  padding: 5px;
 }
 
 .Project-Screen-Container {
@@ -299,6 +353,196 @@ body {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-.NonVisualTechStack{
+.NonVisualTechStack {
   width: 100%;
+}
+
+.Browser-Project-Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 25px;
+  box-shadow: var(--Shadow);
+}
+
+.Content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  text-align: center;
+}
+
+.ContactForm {
+  display: flex;
+  width: 550px;
+  background-color: var(--Pink);
+  border-radius: 15px;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  padding: 20px;
+}
+
+.ContactForm input {
+  margin-bottom: 10px;
+}
+
+.ContactForm textarea {
+  resize: none;
+  width: 540px;
+  margin-bottom: 10px;
+}
+
+.FormLabel {
+  color: azure;
+  font-family: var(--MainFont);
+  text-transform: uppercase;
+}
+
+.FormButton {
+  border: none;
+  text-transform: uppercase;
+  font-family: var(--MainFont);
+  border-radius: 15px;
+  color: var(--Pink);
+  background-color: rgb(255, 255, 255);
+}
+
+.FormButton:hover {
+  background-color: rgb(246, 246, 246);
+  color: rgb(230, 138, 119);
+}
+
+.FormSubmitted {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  font-family: var(--MainFont);
+  font-size: 1.5rem;
+  color: azure;
+}
+
+/* Media Queries */
+@media (max-width: 767px) {
+  .Single-Graphic-Project {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .TitlePinkGradient-Underline {
+    height: 5px;
+    width: 100%;
+    background-color: var(--Pink);
+  }
+  .Project-Description {
+    padding-right: 0%;
+  }
+}
+
+@media (max-width: 425px) {
+  .ContactForm {
+    display: flex;
+    width: 285px;
+    background-color: var(--Pink);
+    border-radius: 15px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding: 20px;
+  }
+  .ContactForm input {
+    margin-bottom: 10px;
+  }
+  .ContactForm textarea {
+    width: 275px;
+  }
+}
+
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px;
+    border: 2px solid blue;
+  }
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+    border: 2px solid red;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    border: 2px solid green;
+  }
+  .Browser-Project-Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    align-items: flex-start;
+    height: min-content;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+@media (min-width: 475px) {
+  .container-wrapContent {
+    max-width: 475px;
+    border: 2px solid blue;
+  }
+}
+
+@media (min-width: 640px) {
+  .container-wrapContent {
+    max-width: 640px;
+    border: 2px solid red;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-wrapContent {
+    max-width: 768px;
+    border: 2px solid green;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-wrapContent {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container-wrapContent {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container-wrapContent {
+    max-width: 1536px;
+  }
 }
