@@ -1,7 +1,6 @@
 import React from 'react';
 import BackgroundImage from '@/assets/Port_Web_BackGround.png'
 import Glitch from './Glitch';
-const Bio = "Hey! I'm Sam, a London-based software developer with a knack for problem-solving and a passion for sleek design. Explore my portfolio below, and feel free to drop me a line if you've got something cool in mind or just want to geek out about tech!"
 import Socials from './Socials';
 import { FaArrowDown } from "react-icons/fa";
 import { FaAnglesDown } from "react-icons/fa6";

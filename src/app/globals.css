@@ -11,6 +11,7 @@ body {
   margin: 0;
   padding: 0;
 }
+/* Container */
 
 /* HomePage  */
 
@@ -93,9 +94,9 @@ body {
   color: azure;
 }
 
-/* End Of HomePage Content */
+/* ^^ HomePage Content */
 
-/* HomePage Glitch */
+/* Glitch */
 
 .subheading {
   font-family: var(--MainFont);
@@ -177,6 +178,8 @@ body {
   }
 }
 
+/*  ^^ Glitch */
+
 .SectionHeaderBox-Pink {
   background-color: var(--Pink);
   font-size: 2.5rem;
@@ -193,6 +196,7 @@ body {
   font-size: 2.5rem;
   font-family: var(--MainFont);
   color: var(--Pink);
+  text-transform: uppercase;
 }
 .TitlePinkGradient-Underline {
   height: 5px;
@@ -461,20 +465,23 @@ body {
   }
 }
 
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
 @media (min-width: 475px) {
   .container {
     max-width: 475px;
     border: 2px solid blue;
   }
 }
-
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
     border: 2px solid red;
   }
 }
-
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
