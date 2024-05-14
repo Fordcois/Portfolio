@@ -8,11 +8,10 @@ const BrowserImage = ({ Align, projectName, image }) => {
     const justifyContent = Align === 'Left' ? 'flex-start' : 'flex-end';
 
     return (
-        // TODO Justify Content Needs to be pushed to a Media Query!
-        <div style={{ width: '60%', display: 'flex', justifyContent: 'center' }}>
-            <div style={{ width: 'auto', height: 'auto', display: 'flex', flexDirection: 'column',border:'2px solid red',borderRadius:'15px 15px 15px 15px', backgroundColor:'red' }}>
-                <div style={{ backgroundColor: 'red', width: '100%', display:'flex', justifyContent:'space-between',borderRadius:'15px 15px 0px 0px'}}>
-                    <span >{projectName}</span>
+        <div classname='BrowserImage-Container'>
+            <div className='BrowserImageBorder'>
+                <div className='BrowserImageNavigationbar'>
+                    <span className='BrowserImageTitle'>{projectName}</span>
                 
                     <div className="ImageBrowserNavigationButtons">
                         <FaCircleMinus className="BrowserButton" />
