@@ -94,11 +94,30 @@ body {
   color: azure;
 }
 
+.ContactButton-Div{
+  display: flex;
+  justify-content: right;
+  margin-top: 5%;
+}
+@media (min-width: 768px) {
+  .ContactButton-Div{
+    margin-top: 0%;
+    justify-content: left;
+  }
+}
+
 .ContactButton{
+  align-self: right;
   border: solid 2px azure;
   font-family: var(--MainFont);
   color: azure;
-  padding: 10px 20px;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 5px 20px;
+  width: fit-content;
+  text-align: justify;
+  text-justify: inter-word;
 }
 .ContactButton:hover{
   border: solid 2px azure;
@@ -106,6 +125,7 @@ body {
   font-family: var(--MainFont);
   color: var(--Pink)
 }
+
 
 /* ^^ HomePage Content */
 
