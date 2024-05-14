@@ -11,8 +11,8 @@ export default function Home() {
     <>
     <HomePage />
     <Bio/>
-    <VisualProjects/>
-    {/* <NonVisualProjects/> */}
+    {/* <VisualProjects/> */}
+    <NonVisualProjects/>
     {/* <Contact/> */}
     
     
