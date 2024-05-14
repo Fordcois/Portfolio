@@ -35,19 +35,6 @@ body {
   }
 }
 
-.Biotext {
-  text-align: justify;
-  color: azure;
-  text-justify: auto;
-}
-@media (min-width: 475px) {
-  .Biotext {
-    background-color: transparent;
-    margin-right: 5%;
-    width: 100%;
-  }
-}
-
 .Glitch-SubHeading {
   font-family: var(--MainFont);
   color: azure;
@@ -129,12 +116,6 @@ body {
 /* ^^ HomePage Content */
 
 /* Glitch */
-
-.subheading {
-  font-family: var(--MainFont);
-  color: azure;
-  font-size: 1.5rem;
-}
 
 .stack {
   display: grid;
@@ -343,20 +324,6 @@ body {
   font-weight: bold;
 }
 
-.TechBubbleBlack {
-  color: white;
-  background-color: black;
-  padding: 0.5% 2%;
-  border-radius: 15px;
-  margin-left: 0.5%;
-  margin-right: 0.5%;
-  font-size: 0.75rem;
-  font-weight: bold;
-}
-
-.TechBubbleBlack:hover {
-  background-color: darkgray;
-}
 
 .TechBubbleBlue {
   color: white;
@@ -388,58 +355,12 @@ body {
   background-color: #606060;
 }
 
-.ParentDiv {
-  display: flex;
-  width: min-content;
-  flex-direction: column;
-  border-radius: 15px;
-  border: var(--Pink) 2px solid;
-  background-color: var(--Pink);
-}
-
-.ImageBrowserNavigationBar {
-  background-color: var(--Pink);
-  display: flex;
-  justify-content: space-between;
-  vertical-align: text-bottom;
-  width: 480px;
-  border-radius: 15px 15px 0px 0px;
-}
-.ImageBrowserNavigationTitle {
-  color: azure;
-  padding-left: 10px;
-}
 
 .ImageBrowserNavigationButtons {
   padding-right: 1%;
   display: flex;
   justify-content: space-between;
   vertical-align: text-bottom;
-}
-
-.Screen-Image {
-  border-radius: 0px 0px 15px 15px;
-  max-width: 400px;
-  max-height: 225px;
-}
-
-.Single-Graphic-Project {
-  display: flex;
-  max-width: 1400px;
-}
-
-.ProjectDiv-Container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.NoGraphic-ProjectDiv-Container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding: 10px;
 }
 
 .NoGraphic-Project-Description {
@@ -450,16 +371,6 @@ body {
   padding: 5px;
 }
 
-.Project-Screen-Container {
-  padding: 10px;
-  width: 40%;
-  min-width: 500px;
-}
-.Project-Text-Container {
-  padding: 10px;
-  width: 60%;
-  min-width: 500px;
-}
 
 .SingleNonVisualProject {
   display: flex;
@@ -612,12 +523,6 @@ body {
 }
 
 /* Media Queries */
-@media (max-width: 767px) {
-  .Single-Graphic-Project {
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-}
 
 
 
