@@ -8,7 +8,7 @@ const BrowserImage = ({ Align, projectName, image }) => {
     const justifyContent = Align === 'Left' ? 'flex-start' : 'flex-end';
 
     return (
-        <div classname='BrowserImage-Container'>
+        <div className='BrowserImage-Container'>
             <div className='BrowserImageBorder'>
                 <div className='BrowserImageNavigationbar'>
                     <span className='BrowserImageTitle'>{projectName}</span>

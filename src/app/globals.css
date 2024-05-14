@@ -39,7 +39,6 @@ body {
   text-align: justify;
   color: azure;
   text-justify: auto;
-  background-color: rgba(0, 0, blue, alpha);
 }
 @media (min-width: 475px) {
   .Biotext {

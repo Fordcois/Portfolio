@@ -1,18 +1,16 @@
-'use client'
-
-import React from 'react';
-
+import {React} from 'react';
 import { useForm, ValidationError } from '@formspree/react';
+
 import { IoMdPaperPlane } from "react-icons/io";
 
-const Contact = () => { 
-    
+const Contact = ({contactRef}) => { 
+
 const [state, handleSubmit] = useForm("mpzvknvz");
 
 return (     
 <div className='ContactBackground'>
 <div className="container">
-<div className="Section-Header-White">Contact Me</div>   
+<div className="Section-Header-White" ref={contactRef}>Contact Me</div>   
 <div className='Content'>
 
 

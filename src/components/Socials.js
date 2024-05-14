@@ -9,7 +9,7 @@ return (
   <span style={{width:'5%'}}/>
   <a href="https://www.linkedin.com/in/samueljford/"><FaLinkedin className="ReactIcons" title='Linkedin'/></a>
   <span style={{width:'5%'}}/>
-  <a href="mailto:samueljamesford@googlemail.com"><MdEmail className="ReactIcons" title='Email'/></a> 
+  <a href="mailto:business@frdmedia.co.uk"><MdEmail className="ReactIcons" title='Email'/></a> 
 </div>
 
 );
