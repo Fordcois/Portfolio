@@ -3,10 +3,6 @@ import SingleNonVisualProject from "./SingleNonVisualProject";
 const NonVisualProjects = () => {
 
 const projects = [
-    // Chitter
-    // makersBNB
-    // ReactRPG
-
     // {name: 'EXAMPLE',
     // description: 'PROJECT DESCRIPTION',
     // techUsed: ['TECH', 'AS', 'STRING', 'ARRAY'],
