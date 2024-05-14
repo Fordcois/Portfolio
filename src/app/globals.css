@@ -278,6 +278,7 @@ body {
 .BrowserDescContainer{
   justify-content: flex-start;
   width: 100%;
+  padding: .5%;
 }
 @media (min-width: 768px) {
   .BrowserDescContainer{
@@ -558,16 +559,13 @@ body {
 }
 
 .container {
-  padding: 10px 10px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  border: 2px solid green;
 }
 @media (min-width: 475px) {
   .container {
     max-width: 475px;
-
   }
 }
 @media (min-width: 640px) {
