@@ -94,6 +94,19 @@ body {
   color: azure;
 }
 
+.ContactButton{
+  border: solid 2px azure;
+  font-family: var(--MainFont);
+  color: azure;
+  padding: 10px 20px;
+}
+.ContactButton:hover{
+  border: solid 2px azure;
+  background-color: azure;
+  font-family: var(--MainFont);
+  color: var(--Pink)
+}
+
 /* ^^ HomePage Content */
 
 /* Glitch */
@@ -202,6 +215,20 @@ body {
   color: azure;
   padding: 0px 10px;
   border-radius: 2px;
+  margin: 10px 0px;
+  width: fit-content;
+  box-shadow: var(--Blue) -5px 5px 0px;
+}
+.Section-Header-White{
+  background-color: azure;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-family: var(--MainFont);
+  color: var(--Pink);
+  padding: 0px 10px;
+  border-radius: 2px;
+  margin: 10px 0px;
+  width: fit-content;
   box-shadow: var(--Blue) -5px 5px 0px;
 }
 
@@ -258,6 +285,7 @@ body {
 .Project-DescriptionLeft,
 .Project-DescriptionRight {
   text-align: justify;
+  color: var(--FontColour);
   text-justify: inter-word;
   padding: 0% 2%;
 }
@@ -397,6 +425,7 @@ body {
 
 .NoGraphic-Project-Description {
   display: flex;
+  color:var(--FontColour);
   text-align: justify;
   text-justify: inter-word;
   padding: 5px;
@@ -477,6 +506,13 @@ body {
     height: min-content;
   }
 }
+/* Contact Form */
+.ContactBackground{
+  margin-top: 20px;
+  background-color: var(--Pink);
+  padding: 20px 0px;
+}
+
 
 .Content {
   display: flex;
@@ -488,27 +524,31 @@ body {
 
 .ContactForm {
   display: flex;
-  width: 550px;
-  background-color: var(--Pink);
+  background-color: azure;
   border-radius: 15px;
   flex-direction: column;
   justify-content: center;
   text-align: left;
   padding: 20px;
+  width: 90%;
+  max-width: 600px;
 }
 
-.ContactForm input {
-  margin-bottom: 10px;
+.ContactForm textarea::placeholder,
+.ContactForm input::placeholder{
+  font-family: Helvetica, Arial, sans-serif;
 }
-
+.ContactForm input,
 .ContactForm textarea {
+  border-radius: 5px;
+  border: 2px solid var(--Pink);
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: medium;
   resize: none;
-  width: 540px;
-  margin-bottom: 10px;
 }
 
 .FormLabel {
-  color: azure;
+  color: var(--Pink);
   font-family: var(--MainFont);
   text-transform: uppercase;
 }
@@ -518,22 +558,38 @@ body {
   text-transform: uppercase;
   font-family: var(--MainFont);
   border-radius: 15px;
-  color: var(--Pink);
-  background-color: rgb(255, 255, 255);
+  color: azure;
+  margin-top: 10px;
+  background-color: var(--Pink)
 }
 
 .FormButton:hover {
-  background-color: rgb(246, 246, 246);
-  color: rgb(230, 138, 119);
+  background-color: var(--Blue);
+  color: azure;
 }
 
 .FormSubmitted {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+
+}
+.FormSubmittedBigMessage{
   text-transform: uppercase;
   font-family: var(--MainFont);
-  font-size: 1.5rem;
+  font-size: 2rem;
+  color: var(--Pink)
+}
+.FormSubmittedsmallMessage{
+  color: var(--Pink);
+  font-style: italic;
+}
+.FooterMessage{
+  margin-top: 20px;
   color: azure;
+  font-size: 0.75rem;
+  font-style: italic;
 }
 
 /* Media Queries */
@@ -544,24 +600,7 @@ body {
   }
 }
 
-@media (max-width: 425px) {
-  .ContactForm {
-    display: flex;
-    width: 285px;
-    background-color: var(--Pink);
-    border-radius: 15px;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
-    padding: 20px;
-  }
-  .ContactForm input {
-    margin-bottom: 10px;
-  }
-  .ContactForm textarea {
-    width: 275px;
-  }
-}
+
 
 .container {
   width: 100%;

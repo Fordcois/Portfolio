@@ -11,7 +11,7 @@ return (
         <Glitch Name={'SAMUEL FORD'}/>
         <div className='Glitch-SubHeading'>Software Developer</div>
         <Socials/>
-        <div style={{padding:'5px',border: '1px solid azure', width:'100px'}}>GET IN TOUCH</div>
+        <span className='ContactButton'>GET IN TOUCH</span>
     </div> 
     <div style={{ position: 'absolute', bottom: '1%', right: '1%', padding: '10px' }}>
         <FaAnglesDown className="ArrowIcon" style={{color:'rgba(240,255,255,.2)'}}/>

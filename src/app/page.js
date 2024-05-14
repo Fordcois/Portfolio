@@ -4,16 +4,16 @@ import Contact from "@/components/Contact";
 import HomePage from "@/components/Homepage";
 import VisualProjects from "@/components/VisualProjects";
 import Bio from "@/components/Bio";
-import ContainerTest from "@/components/container";
+
 
 export default function Home() {
   return (
     <>
     <HomePage />
     <Bio/>
-    {/* <VisualProjects/> */}
+    <VisualProjects/>
     <NonVisualProjects/>
-    {/* <Contact/> */}
+    <Contact/>
     
     
     

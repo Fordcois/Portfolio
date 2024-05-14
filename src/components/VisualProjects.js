@@ -24,7 +24,7 @@ const VisualProjects = () => {
 
 return (
 <div className="container">
-    <span className="Section-Header">Projects</span>
+    <div className="Section-Header">Projects</div>
     <p className='Section-Text'>Here are just a selection of my projects. You can find more projects, as well as those currently in development, on my <a className='LightBlueLink' href='https://github.com/Fordcois'>GitHub...</a></p>
 
         
