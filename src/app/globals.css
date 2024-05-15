@@ -78,6 +78,16 @@ body {
 .ArrowIcon {
   font-size: 5em;
   color: azure;
+  position: relative; 
+  animation: ArrowIcon 1s infinite alternate; 
+}
+@keyframes ArrowIcon {
+  0% {
+      top: 0; /* Initial position */
+  }
+  100% {
+      top: 15px; /* Final position */
+  }
 }
 
 .ContactButton-Div{
