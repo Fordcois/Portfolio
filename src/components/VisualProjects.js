@@ -1,23 +1,25 @@
 import BrowserImage from './BrowserProjects/browser-image';
 import BrowserDesc from './BrowserProjects/browser-desc';
 
+import BoozersWeepersImage from '@/assets/screenshots/BoozersWeepersScreen.png'
+import AceBookImage from '@/assets/screenshots/AceBookScreen.png'
+
 const projects = [
     {
-    name: "ABC1",
-    image: 'ABC IMAGE',
+    name: "Boozers Weepers",
+    image: BoozersWeepersImage,
     description:
-    "A fullstack Facebook clone created from a legacy starter codebase. Recreates Facebook’s main functionalities including: Newsfeed, Likes, Comments, image uploads,User Profiles, Real-time Search, and Friends.",
-    techUsed: ["Mongo", "Express", "React", "NodeJS"],
-    github:"https://github.com"
+    "BoozersWeepers is a lifestyle web app designed to facilitate the tracking and settlement of informal pub bets and IOUs among friends. Users can search for friends in real-time, and initiate or respond to wager challenges with clear win conditions and deadlines. Notifications remind users when deadlines approach, and victors receive IOUs for pints, which are managed in a virtual Wallet. The platform also features a global leaderboard highlighting top performers and allows the creation of friend groups to monitor each other's betting activities.",
+    techUsed: ["MongoDB", "Express", "React", "NodeJS",'CSS'],
+    github:"https://github.com/Fordcois/BoozersWeepers"
     },
     {
     name: "Acebook",
-    image: "AcebookImage",
+    image: AceBookImage,
     description:
-        "A fullstack Facebook clone created from a legacy starter codebase. Recreates Facebook’s main functionalities including: Newsfeed, Likes, Comments, image uploads,User Profiles, Real-time Search, and Friends.",
-    techUsed: ["Mongo", "Express", "React", "NodeJS"],
+        "Acebook is a full-stack web application that replicates the core functionalities of Facebook. It offers a comprehensive social media experience with features such as a Newsfeed for viewing trending posts, the ability to like and comment on posts, and options for image uploads. Users can create and manage profiles, search for friends in real-time, and establish friend connections. ",
+    techUsed: ["Mongo", "Express", "React", "NodeJS","CSS"],
     github: "https://github.com/clairep94/acebook-team-griffins",
-    website: "https://github.com/clairep94/acebook-team-griffins",
     },];
 
 const VisualProjects = () => {
@@ -33,14 +35,14 @@ return (
             {index % 2 === 0 ? (
             // Left Alignment
             <div className='Browser-Project-ContainerLeft'>
-                <BrowserImage Align='Right' projectName={project.name} image='IMAGE'/>
+                <BrowserImage Align='Right' projectName={project.name} Projectimage={project.image}/>
                 <BrowserDesc Align='Left' projectName={project.name} projectDescription={project.description} projectTechUsed={project.techUsed} github={project.github} website={project.website} />
             </div>
             ) : (
                 // Right Alignment
             <div className='Browser-Project-ContainerRight'>
                 <BrowserDesc Align='Right' projectName={project.name} projectDescription={project.description} projectTechUsed={project.techUsed} github={project.github} website={project.website}  />
-                <BrowserImage Align='Left' projectName={project.name} image='IMAGES'/>
+                <BrowserImage Align='Left' projectName={project.name} Projectimage={project.image}/>
             </div>
             )}
         </div>

@@ -1,5 +1,5 @@
 import {React} from 'react';
-import BackgroundImage from '@/assets/Port_Web_BackGround.png'
+import BackgroundImage from '@/assets/Home_BG.png'
 import Glitch from './Glitch';
 import Socials from './Socials';
 import { FaAnglesDown } from "react-icons/fa6";

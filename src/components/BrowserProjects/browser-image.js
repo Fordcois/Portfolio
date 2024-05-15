@@ -1,9 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
-import CastleImage from '@/assets/screenshots/CastlePlaceHolder.png';
 import { FaCircleMinus, FaCirclePlus, FaCircleXmark } from "react-icons/fa6";
 
-const BrowserImage = ({ Align, projectName, image }) => {
+const BrowserImage = ({ Align, projectName, Projectimage }) => {
 
     const justifyContent = Align === 'Left' ? 'flex-start' : 'flex-end';
 
@@ -21,7 +20,7 @@ const BrowserImage = ({ Align, projectName, image }) => {
                 
                 </div>
                 <Image
-                    src={CastleImage}
+                    src={Projectimage}
                     alt='Test'
                     layout='responsive'
                     width={1280}
