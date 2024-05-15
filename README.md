@@ -1,6 +1,6 @@
 ## Personal Portfolio Site
 
-Welcome to my personal portfolio site, showcasing a range of my projects. Designed with a mobile-first approach, this site is highly responsive, utilizing multiple breakpoints and media queries to ensure an optimal viewing experience on any device. 
+Welcome to my personal portfolio site, showcasing a range of my projects. Built in NextJS and designed with a mobile-first approach, the site is responsive, utilizing multiple breakpoints and media queries to ensure an optimal viewing experiences across devices.
 
 Additionally, the site is structured to be easily updatable, allowing for seamless additions of new projects and content.
 Features
@@ -10,6 +10,7 @@ Features
 The site is hosted online, but if you prefer to download and run it locally, follow these steps:
 
 Clone the repository:
+
 ```bash
 git clone https://github.com/yourusername/your-repo.git
 cd your-repo
@@ -25,5 +26,5 @@ Start the development server:
 npm run dev
 ```
 
-Your local development server will be running at http://localhost:3000, and you can view your portfolio site there.
+Your local development server will be running at http://localhost:3000
 
