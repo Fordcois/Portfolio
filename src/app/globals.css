@@ -4,7 +4,7 @@
   --Pink: #ef9380;
   --Blue: #51bbcf;
   --MainFont: "Oswald", sans-serif;
-  --Shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  --Shadow: rgba(149, 157, 165, 0.15) 0px 8px 24px;
   --FontColour: #142c31;
 }
 
@@ -382,7 +382,7 @@ body {
   border-radius: 15px;
   margin-top: 25px;
   align-self: stretch;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: var(--Shadow)
 }
 @media (min-width: 1024px) {
     .SingleNonVisualProject{
