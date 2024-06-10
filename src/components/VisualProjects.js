@@ -10,7 +10,7 @@ const projects = [
     image: BoozersWeepersImage,
     description:
     "BoozersWeepers is a lifestyle web app designed to facilitate the tracking and settlement of informal pub bets and IOUs among friends. Users can search for friends in real-time, and initiate or respond to wager challenges with clear win conditions and deadlines. Notifications remind users when deadlines approach, and victors receive IOUs for pints, which are managed in a virtual Wallet. The platform also features a global leaderboard highlighting top performers and allows the creation of friend groups to monitor each other's betting activities.",
-    techUsed: ["MongoDB", "Express", "React", "NodeJS",'CSS'],
+    techUsed: ["MongoDB", "Atlas","Express", "React", "NodeJS",'CSS','Bcrypt'],
     github:"https://github.com/Fordcois/BoozersWeepers",
     website:"https://boozersweepers.onrender.com"
     },
@@ -19,9 +19,10 @@ const projects = [
     image: AceBookImage,
     description:
         "Acebook is a full-stack web application that replicates the core functionalities of Facebook. It offers a comprehensive social media experience with features such as a Newsfeed for viewing trending posts, the ability to like and comment on posts, and options for image uploads. Users can create and manage profiles, search for friends in real-time, and establish friend connections. ",
-    techUsed: ["Mongo", "Express", "React", "NodeJS","CSS"],
-    github: "https://github.com/clairep94/acebook-team-griffins",
-    },];
+    techUsed: ["Mongo","Atlas", "Express", "React", "NodeJS","CSS",'Bcrypt'],
+    github: "https://github.com/Fordcois/Acebook",
+    website:"acebook-frontend-72bo.onrender.com"
+    }];
 
 const VisualProjects = () => {
 
