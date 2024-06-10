@@ -21,7 +21,7 @@ const projects = [
         "Acebook is a full-stack web application that replicates the core functionalities of Facebook. It offers a comprehensive social media experience with features such as a Newsfeed for viewing trending posts, the ability to like and comment on posts, and options for image uploads. Users can create and manage profiles, search for friends in real-time, and establish friend connections. ",
     techUsed: ["Mongo","Atlas", "Express", "React", "NodeJS","CSS",'Bcrypt'],
     github: "https://github.com/Fordcois/Acebook",
-    website:"acebook-frontend-72bo.onrender.com"
+    website:"https://acebook-frontend-72bo.onrender.com"
     }];
 
 const VisualProjects = () => {
