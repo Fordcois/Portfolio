@@ -16,7 +16,7 @@ export const metadata = {
       siteName: 'Samuel Ford: Software Developer',
       images: [
         {
-          url: '/meta_preview.png', 
+          url: 'https://www.samueljford.com/meta_preview.png', 
           width: 1200,
           height: 630,
         }
