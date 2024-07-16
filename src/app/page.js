@@ -5,6 +5,7 @@ import Bio from "@/components/Bio";
 import VisualProjects from "@/components/VisualProjects";
 import NonVisualProjects from "@/components/NoVisualProjects";
 import Contact from "@/components/Contact";
+import Share from "@/components/share";
 
 export default function Home() {
 
@@ -13,11 +14,13 @@ export default function Home() {
   
   return (
     <>
+      
       <HomePage GoToFunction={RefFunction}/>
       <Bio/>
       <VisualProjects/>
       <NonVisualProjects/>
       <Contact contactRef={contactRef}/>
+      <Share/>
     </>
   );
 }

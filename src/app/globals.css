@@ -623,3 +623,23 @@ body {
     max-width: 1536px;
   }
 }
+
+.ShareIcons{
+  font-size: 2em;
+  color: azure;
+  margin-right: 0.5rem;
+}
+
+.ShareContainer{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: var(--Pink);
+}
+
+
+.ShareFontWhite{
+  font-family: var(--MainFont);
+  color: azure;
+  margin-right: 5px;
+}
