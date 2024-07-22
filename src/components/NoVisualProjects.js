@@ -9,6 +9,13 @@ const NonVisualProjects = () => {
     // website: 'http://twitter.com' - Remove if no ink,
     // },
     {
+      name: "Crown Cryptic",
+      description:
+        "Crown Cryptic is a web application designed to challenge users with a daily cryptic crossword clue. Inspired by the success of word-based games like Wordle, Crown Cryptic provides a fun and engaging way to solve cryptic crossword clues every day.",
+      techUsed: ["nextJS","JavsScript", "React", "CSS"],
+      github: "https://github.com/Fordcois/crown-cryptic",
+    },
+    {
       name: "EventSphere",
       description:
         "An event planning website where the party comes to you! Users can register, submit detailed event requests including type, budget, and number of attendees, and receive responses with offers from relevant businesses that meet that criteria.",
