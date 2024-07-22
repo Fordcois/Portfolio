@@ -12,7 +12,7 @@ const projects = [
     "BoozersWeepers is a lifestyle web app designed to facilitate the tracking and settlement of informal pub bets and IOUs among friends. Users can search for friends in real-time, and initiate or respond to wager challenges with clear win conditions and deadlines. Notifications remind users when deadlines approach, and victors receive IOUs for pints, which are managed in a virtual Wallet. The platform also features a global leaderboard highlighting top performers and allows the creation of friend groups to monitor each other's betting activities.",
     techUsed: ["MongoDB", "Atlas","Express", "React", "NodeJS",'CSS','Bcrypt'],
     github:"https://github.com/Fordcois/BoozersWeepers",
-    website:"https://boozersweepers.onrender.com"
+    website:"https://www.boozersweepers.frdmedia.co.uk/?refer=my%20portfolio"
     },
     {
     name: "Acebook",
