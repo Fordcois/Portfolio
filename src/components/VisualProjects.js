@@ -29,7 +29,7 @@ const projects = [
     image: FordReactLibImage,
     description:
         "A hosted website designed for displaying and organizing previously built React components, making them easy to use and integrate into future projects. The site’s architecture is built around the philosophy of being straightforward to extend and update.",
-    techUsed: ["Mongo","Atlas", "Express", "React", "NodeJS","CSS",'Bcrypt'],
+    techUsed: ["Javascript","React","CSS"],
     github: "https://github.com/Fordcois/ford-react-library",
     website:"https://www.library.frdmedia.co.uk/"
     },
