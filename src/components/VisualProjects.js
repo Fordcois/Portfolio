@@ -3,6 +3,7 @@ import BrowserDesc from './BrowserProjects/browser-desc';
 
 import BoozersWeepersImage from '@/assets/screenshots/BoozersWeepersScreen.png'
 import AceBookImage from '@/assets/screenshots/AceBookScreen.png'
+import FordReactLibImage from '@/assets/screenshots/FordReactLibScreen.png'
 
 const projects = [
     {
@@ -10,7 +11,7 @@ const projects = [
     image: BoozersWeepersImage,
     description:
     "BoozersWeepers is a lifestyle web app designed to facilitate the tracking and settlement of informal pub bets and IOUs among friends. Users can search for friends in real-time, and initiate or respond to wager challenges with clear win conditions and deadlines. Notifications remind users when deadlines approach, and victors receive IOUs for pints, which are managed in a virtual Wallet. The platform also features a global leaderboard highlighting top performers and allows the creation of friend groups to monitor each other's betting activities.",
-    techUsed: ["MongoDB", "Atlas","Express", "React", "NodeJS",'CSS','Bcrypt'],
+    techUsed: ["MongoDB", "Atlas","Express", "React", "NodeJS",'CSS','Bcrypt','Render'],
     github:"https://github.com/Fordcois/BoozersWeepers",
     website:"https://www.boozersweepers.frdmedia.co.uk/?refer=my%20portfolio"
     },
@@ -19,10 +20,21 @@ const projects = [
     image: AceBookImage,
     description:
         "Acebook is a full-stack web application that replicates the core functionalities of Facebook. It offers a comprehensive social media experience with features such as a Newsfeed for viewing trending posts, the ability to like and comment on posts, and options for image uploads. Users can create and manage profiles, search for friends in real-time, and establish friend connections. ",
-    techUsed: ["Mongo","Atlas", "Express", "React", "NodeJS","CSS",'Bcrypt'],
+    techUsed: ["Mongo","Atlas", "Express", "React", "NodeJS","CSS",'Bcrypt','Render'],
     github: "https://github.com/Fordcois/Acebook",
     website:"https://acebook-frontend-72bo.onrender.com"
-    }];
+    },
+    {
+    name: "Ford React",
+    image: FordReactLibImage,
+    description:
+        "A hosted website designed for displaying and organizing previously built React components, making them easy to use and integrate into future projects. The site’s architecture is built around the philosophy of being straightforward to extend and update.",
+    techUsed: ["Mongo","Atlas", "Express", "React", "NodeJS","CSS",'Bcrypt'],
+    github: "https://github.com/Fordcois/ford-react-library",
+    website:"https://www.library.frdmedia.co.uk/"
+    },
+
+];
 
 const VisualProjects = () => {
 
