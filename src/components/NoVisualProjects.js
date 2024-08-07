@@ -14,6 +14,7 @@ const NonVisualProjects = () => {
         "Solvr is a tool for solving Wordle-style puzzles, built with a user interface that mimics the official game. It takes user input of letters and colors, then provides the best suggestions based on potential remaining words.In my experiments, Solvr solves the puzzle in an average of 3.5 guesses.",
       techUsed: ["Typescript","NextJS","React",'CSS'],
       github: "https://github.com/Fordcois/wordle-solver",
+      website: 'https://www.solvr.frdmedia.co.uk/'
     },
     {
       name: "Crown Cryptic",
