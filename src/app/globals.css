@@ -328,8 +328,7 @@ body {
   background-color: var(--Pink);
   padding: 0.5% 2%;
   border-radius: 15px;
-  margin-left: 0.25%;
-  margin-right: 0.25%;
+  margin: 0.25%;
   font-size: 0.75rem;
   font-weight: bold;
 }
