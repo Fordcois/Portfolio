@@ -3,7 +3,7 @@ import BrowserDesc from './BrowserProjects/browser-desc';
 
 import BoozersWeepersImage from '@/assets/screenshots/BoozersWeepersScreen.png'
 import AceBookImage from '@/assets/screenshots/AceBookScreen.png'
-import FordReactLibImage from '@/assets/screenshots/FordReactLibScreen.png'
+import FordReactLibImage from '@/assets/screenshots/FordReactLibraryScreenshot.png'
 import SolvrImage from '@/assets/screenshots/SolvrScreenshot.png'
 
 const projects = [
