@@ -4,6 +4,7 @@ import BrowserDesc from './BrowserProjects/browser-desc';
 import BoozersWeepersImage from '@/assets/screenshots/BoozersWeepersScreen.png'
 import AceBookImage from '@/assets/screenshots/AceBookScreen.png'
 import FordReactLibImage from '@/assets/screenshots/FordReactLibScreen.png'
+import SolvrImage from '@/assets/screenshots/SolvrScreenshot.png'
 
 const projects = [
     {
@@ -14,6 +15,15 @@ const projects = [
     techUsed: ["MongoDB", "Atlas","Express", "React", "NodeJS",'CSS','Bcrypt','Render'],
     github:"https://github.com/Fordcois/BoozersWeepers",
     website:"https://www.boozersweepers.frdmedia.co.uk/?refer=my%20portfolio"
+    },
+    {
+    name: "Solvr",
+    image: SolvrImage,
+    description:
+    "Solvr is a tool for solving Wordle-style puzzles, built with a user interface that mimics the official game. It takes user input of letters and colors, then provides the best suggestions based on potential remaining words.In my experiments, Solvr solves the puzzle in an average of 3.5 guesses.",
+    techUsed: ["Typescript","NextJS","React",'CSS'],
+    github: "https://github.com/Fordcois/wordle-solver",
+    website: 'https://www.solvr.frdmedia.co.uk/'
     },
     {
     name: "Acebook",

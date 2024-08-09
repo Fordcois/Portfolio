@@ -9,14 +9,6 @@ const NonVisualProjects = () => {
     // website: 'http://twitter.com' - Remove if no ink,
     // },
     {
-      name: "Solvr",
-      description:
-        "Solvr is a tool for solving Wordle-style puzzles, built with a user interface that mimics the official game. It takes user input of letters and colors, then provides the best suggestions based on potential remaining words.In my experiments, Solvr solves the puzzle in an average of 3.5 guesses.",
-      techUsed: ["Typescript","NextJS","React",'CSS'],
-      github: "https://github.com/Fordcois/wordle-solver",
-      website: 'https://www.solvr.frdmedia.co.uk/'
-    },
-    {
       name: "Crown Cryptic",
       description:
         "Crown Cryptic is a web application designed to challenge users with a daily cryptic crossword clue. Inspired by the success of word-based games like Wordle, Crown Cryptic provides a fun and engaging way to solve cryptic crossword clues every day.",
