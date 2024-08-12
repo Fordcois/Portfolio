@@ -22,11 +22,9 @@ const BrowserImage = ({ Align, projectName, Projectimage }) => {
                 <Image
                     src={Projectimage}
                     alt='Test'
-                    layout='responsive'
                     width={1280}
                     height={720}
-                    objectFit='contain'
-                    style={{ width: '100%', height: 'auto', minWidth: '320px', minHeight: '180px', maxHeight: '360px', maxWidth: '640px', borderRadius:'0px 0px 15px 15px' }}
+                    className='BrowserImage'
                 />
             </div>
         </div>

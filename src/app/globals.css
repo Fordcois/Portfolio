@@ -622,3 +622,15 @@ body {
     max-width: 1536px;
   }
 }
+
+.BrowserImage{
+    width: 100%;
+    height: auto;
+    min-width: 384px;
+    max-width: 640px;
+    min-height: 216px;
+    max-height: 360px;
+    object-fit: cover;
+    border-radius: 0px 0px 15px 15px;
+
+}
