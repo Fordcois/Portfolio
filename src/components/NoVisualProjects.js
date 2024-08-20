@@ -9,6 +9,13 @@ const NonVisualProjects = () => {
     // website: 'http://twitter.com' - Remove if no ink,
     // },
     {
+      name: "Opt - MTG",
+      description:
+        "Opt is an in-development web application that leverages the Scryfall API to present upcoming Magic: The Gathering cards in an intuitive and aesthetically pleasing manner. It is designed specifically for content creators and streamers to preview cards ",
+      techUsed: ["Typescript","nextJS", "React","SwiperJS", "CSS"],
+      github: "https://github.com/Fordcois/opt-mtg",
+    },
+    {
       name: "Crown Cryptic",
       description:
         "Crown Cryptic is a web application designed to challenge users with a daily cryptic crossword clue. Inspired by the success of word-based games like Wordle, Crown Cryptic provides a fun and engaging way to solve cryptic crossword clues every day.",
