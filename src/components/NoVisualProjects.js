@@ -9,6 +9,13 @@ const NonVisualProjects = () => {
     // website: 'http://twitter.com' - Remove if no ink,
     // },
     {
+      name: "Reception App",
+      description:
+        "A web application built to log the comings and goings of employees to a building - Intended to be displayed on a tablet in a reception area showing all employees and whether they are currently in the building or not.",
+      techUsed: ["Typescript","nextJS", "SQL","Jest", "CSS"],
+      github: "https://github.com/Fordcois/reception-app",
+    },
+    {
       name: "Opt - MTG",
       description:
         "Opt is an in-development web application that leverages the Scryfall API to present upcoming Magic: The Gathering cards in an intuitive and aesthetically pleasing manner. It is designed specifically for content creators and streamers to preview cards ",
